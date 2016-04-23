@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ponniroshu.fishup.NewFishActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/wat_3"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="16dp"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/overflow"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:text="New Fish"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="16dp"
+        android:src="@drawable/ic_more_vert_black_24dp2" />
+
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:scaleType="fitXY"
+        android:id="@+id/fish"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/overflow"
+        android:src="@drawable/dummy_fish" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fish"
+        android:id="@+id/place_image"
+        android:padding="16dp"
+        android:src="@drawable/ic_place_black_24dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/place_image"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:layout_alignTop="@+id/place_image"
+        android:layout_alignBottom="@id/place_image"
+        android:text="Perumbavoor, India"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_image"
+        android:id="@+id/time_image"
+        android:padding="16dp"
+        android:src="@drawable/ic_access_time_black_24dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/time_image"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:layout_alignTop="@+id/time_image"
+        android:layout_alignBottom="@id/time_image"
+        android:text="36 minutes"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:textSize="24sp"
+        android:height="60dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="UPLOAD"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

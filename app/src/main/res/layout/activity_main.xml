@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ponniroshu.fishup.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/wat_3"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="16dp"
+        android:src="@drawable/ic_menu_black_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/overflow"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="16dp"
+        android:src="@drawable/ic_more_vert_black_24dp2" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/overflow"
+        android:layout_marginTop="48dp"
+        android:weightSum="4"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>-->
+
+    <include layout="@layout/top_layout" />
+
+    <include
+        android:id="@+id/alert_layout"
+        layout="@layout/alert_layout" />
+
+    <TextView
+        android:id="@+id/recent_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_layout"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingLeft="16dp"
+        android:text="Recent Captures"
+        android:textSize="16sp" />
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:layout_below="@+id/recent_label" />
+</RelativeLayout>
