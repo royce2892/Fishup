@@ -3,49 +3,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EEE"
     tools:context="com.ponniroshu.fishup.ProfileActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.5"
-        android:scaleType="fitXY"
-        android:src="@drawable/wat_3" />
 
-    <ImageView
-        android:id="@+id/overflow"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
+
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:paddingLeft="16dp"
-        android:src="@drawable/ic_arrow_back_black_24dp" />
+        android:background="#FFFFFF">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_toRightOf="@+id/overflow"
-        android:background="@android:color/transparent"
-        android:gravity="center"
-        android:paddingLeft="8dp"
-        android:text="Leaderboard"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="16dp"
+            android:src="@drawable/ic_menu_black_24dp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:paddingRight="16dp"
-        android:src="@drawable/ic_more_vert_black_24dp2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_toRightOf="@+id/overflow"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_more_vert_black_24dp2" />
+    </RelativeLayout>
+
+
+
 
     <ListView
         android:layout_width="match_parent"
         android:padding="16dp"
         android:id="@+id/lead_list"
         android:divider="@null"
-        android:layout_below="@+id/overflow"
+        android:layout_below="@id/toolBar"
         android:dividerHeight="16dp"
         android:layout_height="match_parent"/>
 

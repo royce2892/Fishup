@@ -3,8 +3,8 @@
     android:id="@+id/top_lay"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_below="@+id/overflow"
-    android:layout_marginTop="48dp"
+    android:layout_below="@id/toolBar"
+    android:layout_marginTop="12dp"
     android:background="@android:color/transparent"
     android:weightSum="4">
 
@@ -12,13 +12,15 @@
         android:id="@+id/new_fish_layout"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:padding="@dimen/eight_dp"
         android:layout_weight="1">
 
         <ImageView
             android:id="@+id/new_fish_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/icon_dp"
+            android:layout_height="@dimen/icon_dp"
             android:layout_centerHorizontal="true"
+            android:alpha=".5"
             android:src="@drawable/ic_add_box_black_24dp" />
 
         <TextView
@@ -37,13 +39,16 @@
         android:id="@+id/feedback_layout"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+
+        android:padding="@dimen/eight_dp"
         android:layout_weight="1">
 
         <ImageView
             android:id="@+id/feedback_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/icon_dp"
+            android:layout_height="@dimen/icon_dp"
             android:layout_centerHorizontal="true"
+            android:alpha=".5"
             android:src="@drawable/ic_announcement_black_24dp" />
 
         <TextView
@@ -61,14 +66,16 @@
     <RelativeLayout
         android:id="@+id/lead_layout"
         android:layout_width="0dp"
+        android:padding="@dimen/eight_dp"
         android:layout_height="match_parent"
         android:layout_weight="1">
 
         <ImageView
             android:id="@+id/lead_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/icon_dp"
+            android:layout_height="@dimen/icon_dp"
             android:layout_centerHorizontal="true"
+            android:alpha=".5"
             android:src="@drawable/ic_assessment_black_24dp" />
 
         <TextView
@@ -86,14 +93,16 @@
     <RelativeLayout
         android:id="@+id/invite_layout"
         android:layout_width="0dp"
+        android:padding="@dimen/eight_dp"
         android:layout_height="match_parent"
         android:layout_weight="1">
 
         <ImageView
             android:id="@+id/invite_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/icon_dp"
+            android:layout_height="@dimen/icon_dp"
             android:layout_centerHorizontal="true"
+            android:alpha=".5"
             android:src="@drawable/ic_person_add_black_24dp" />
 
         <TextView
@@ -103,7 +112,7 @@
 
             android:layout_below="@+id/invite_image"
             android:gravity="center"
-            android:text="Invite friends"
+            android:text="Invite"
             android:textColor="@color/black"
             android:textSize="12sp" />
     </RelativeLayout>
