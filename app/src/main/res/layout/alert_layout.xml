@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@+id/top_lay"
+    android:id="@+id/alert_layout"
     android:layout_marginTop="32dp"
     android:background="@android:color/transparent"
     >

@@ -6,21 +6,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 /**
- * Created by royce on 23-04-2016.
+ * Created by royce on 24-04-2016.
  */
-public class LeaderBoardActivity extends AppCompatActivity {
+public class AlertActivity extends AppCompatActivity {
 
-    FeedListAdapter feedListAdapter;
+    AlertListAdapter alertListAdapter;
     ListView listView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         getSupportActionBar().hide();
-        setContentView(R.layout.act_lead);
+        setContentView(R.layout.act_alert);
 
-        feedListAdapter = new FeedListAdapter(this);
-        listView = (ListView) findViewById(R.id.lead_list);
-        listView.setAdapter(feedListAdapter);
+        listView = (ListView) findViewById(R.id.alert_list);
+        alertListAdapter = new AlertListAdapter(this);
+        listView.setAdapter(alertListAdapter);
     }
 }

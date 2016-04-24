@@ -7,10 +7,10 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:src="@drawable/wat_3"
+        android:layout_height="match_parent"
         android:alpha="0.5"
         android:scaleType="fitXY"
-        android:layout_height="match_parent" />
+        android:src="@drawable/wat_3" />
 
     <ImageView
         android:id="@+id/overflow"
@@ -41,27 +41,24 @@
         android:src="@drawable/ic_more_vert_black_24dp2" />
 
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/profile_image"
         android:layout_width="96dp"
-        android:layout_below="@+id/overflow"
         android:layout_height="96dp"
+        android:layout_below="@+id/overflow"
         android:layout_marginLeft="16dp"
-        android:src="@drawable/dummy_fish"
-        app:civ_border_width="2dp"
-        app:civ_border_color="#FF000000"/>
+        android:src="@drawable/dummy_fish" />
 
     <TextView
+        android:id="@+id/profile_place"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profile_image"
         android:layout_toRightOf="@+id/profile_image"
         android:background="@android:color/transparent"
         android:gravity="center"
-        android:paddingTop="32dp"
         android:paddingLeft="16dp"
-        android:id="@+id/profile_place"
-        android:layout_alignTop="@+id/profile_image"
+        android:paddingTop="32dp"
         android:text="From Pathanamthitta, India"
         android:textColor="@color/black"
         android:textSize="16sp" />
@@ -69,88 +66,88 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_place"
         android:layout_toRightOf="@+id/profile_image"
         android:background="@android:color/transparent"
         android:gravity="left|center_vertical"
         android:paddingLeft="16dp"
         android:paddingTop="8dp"
-        android:layout_below="@+id/profile_place"
         android:text="Where there is a fish , there is a Nithin"
         android:textColor="@color/black"
         android:textSize="14sp" />
 
     <TextView
+        android:id="@+id/fish_tracked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
         android:background="@android:color/transparent"
         android:gravity="left|center_vertical"
         android:paddingLeft="16dp"
         android:paddingTop="8dp"
-        android:id="@+id/fish_tracked"
-        android:layout_below="@+id/profile_image"
         android:text="34 fishes tracked"
         android:textColor="@color/black"
         android:textSize="18sp" />
 
     <TextView
+        android:id="@+id/followers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/fish_tracked"
         android:background="@android:color/transparent"
         android:gravity="left|center_vertical"
         android:paddingLeft="16dp"
         android:paddingTop="8dp"
-        android:id="@+id/followers"
-        android:layout_below="@+id/fish_tracked"
         android:text="24 followers , following 3"
         android:textColor="@color/black"
         android:textSize="18sp" />
 
     <TextView
+        android:id="@+id/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/followers"
         android:background="@android:color/transparent"
         android:gravity="left|center_vertical"
         android:paddingLeft="16dp"
         android:paddingTop="8dp"
-        android:id="@+id/score"
-        android:layout_below="@+id/followers"
         android:text="FishUp Index : 396"
         android:textColor="@color/black"
         android:textSize="18sp" />
 
 
     <ImageView
+        android:id="@+id/follow"
         android:layout_width="wrap_content"
-        android:src="@drawable/ic_person_add_black_24dp2"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@+id/score"
         android:layout_alignParentRight="true"
-        android:paddingRight="16dp"
+        android:layout_alignTop="@+id/fish_tracked"
         android:background="@android:color/transparent"
         android:gravity="center"
-        android:layout_alignTop="@+id/fish_tracked"
-        android:layout_alignBottom="@+id/score"
-        android:id="@+id/follow"
-        android:layout_height="24dp" />
+        android:paddingRight="16dp"
+        android:src="@drawable/ic_person_add_black_24dp2" />
 
     <TextView
         android:id="@+id/recent_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/score"
-        android:textColor="@color/black"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:paddingLeft="16dp"
         android:text="Recent Captures"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 
     <com.daimajia.slider.library.SliderLayout
         android:id="@+id/slider"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
+        android:layout_below="@+id/recent_label"
         android:alpha="0.8"
         android:gravity="center"
-        android:layout_below="@+id/recent_label" />
+        android:padding="16dp" />
 
 
 </RelativeLayout>

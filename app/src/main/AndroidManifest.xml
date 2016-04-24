@@ -22,7 +22,8 @@
         <activity android:name=".NewFishActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LeaderBoardActivity" />
-        <activity android:name=".FeedActivity" />
+        <activity android:name=".FeedBackActivity" />
+        <activity android:name=".AlertActivity" />
     </application>
 
 </manifest>

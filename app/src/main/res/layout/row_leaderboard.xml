@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/row_lead_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/dummy_fish" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/row_lead_name"
+        android:text="Mathew Dominic"
+        android:paddingLeft="16dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:gravity="left|center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/row_lead_image"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/row_lead_score"
+        android:text="324"
+        android:textSize="20sp"
+        android:gravity="right|top"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/row_lead_place"
+        android:text="Palakkad, India"
+        android:paddingLeft="16dp"
+        android:layout_below="@+id/row_lead_name"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="left|center_vertical"
+        android:layout_toRightOf="@+id/row_lead_image"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/row_lead_status"
+        android:text="Mathew Dominic"
+        android:paddingLeft="16dp"
+        android:textSize="16sp"
+        android:layout_toLeftOf="@+id/row_lead_score"
+        android:textColor="@color/black"
+        android:gravity="left|bottom"
+        android:layout_toRightOf="@+id/row_lead_image"
+        android:layout_below="@+id/row_lead_place"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
