@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.daimajia.slider.library.SliderLayout;
@@ -12,6 +13,7 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     RelativeLayout newFish,share,lead,feed,alert;
+    ImageView overflow;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,12 +27,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         lead = (RelativeLayout) findViewById(R.id.lead_layout);
         feed = (RelativeLayout) findViewById(R.id.feedback_layout);
         alert = (RelativeLayout) findViewById(R.id.alert_layout);
+        overflow = (ImageView) findViewById(R.id.overflow);
 
         lead.setOnClickListener(this);
         newFish.setOnClickListener(this);
         share.setOnClickListener(this);
         feed.setOnClickListener(this);
         alert.setOnClickListener(this);
+        overflow.setOnClickListener(this);
 
         for (int i = 0; i < 6; i++) {
             TextSliderView textSliderView = new TextSliderView(this);
@@ -60,8 +64,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.alert_layout:
                 startActivity(new Intent(this,AlertActivity.class));
                 break;
-            case R.id.slider:
-
+            case R.id.overflow:
+                startActivity(new Intent(this,FishActivity.class));
                 break;
 
         }
